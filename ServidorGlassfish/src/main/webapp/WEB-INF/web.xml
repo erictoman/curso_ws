@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+
+    <servlet>
+        <servlet-name> s01 </servlet-name>
+        <servlet-class> com.banxico.servidorglassfish.jaxws.Instructor</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name> s02 </servlet-name>
+        <servlet-class> com.banxico.servidorglassfish.jaxws.Caja</servlet-class>
+    </servlet>
+    
+    <servlet>
+        <servlet-name> s03 </servlet-name>
+        <servlet-class> com.banxico.servidorglassfish.jaxws.Instructor2</servlet-class>
+    </servlet>
+    
+    <servlet>
+        <servlet-name> s04 </servlet-name>
+        <servlet-class> com.banxico.servidorglassfish.jaxws.Instructor3</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name> s01 </servlet-name>
+        <url-pattern> /s01 </url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name> s02 </servlet-name>
+        <url-pattern> /s02 </url-pattern>
+    </servlet-mapping>
+    
+    <servlet-mapping>
+        <servlet-name> s03 </servlet-name>
+        <url-pattern> /s03 </url-pattern>
+    </servlet-mapping>
+    
+    <servlet-mapping>
+        <servlet-name> s04 </servlet-name>
+        <url-pattern> /s04 </url-pattern>
+    </servlet-mapping>
+</web-app>
